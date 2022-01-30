@@ -1,11 +1,11 @@
 #' Load annotation
 #'
-#' @param fname
+#' @param fname (char) fname is the path for the gtf file
 #'
-#' @return
+#' @return A dataframe in which are selected only gene_id and gene_name column
 #' @export
 #'
-#' @examples
+#' @examples load_annotation("$params.gtf")
 load_annotation <- function(fname) {
   fname |>
     rtracklayer::import() |>
