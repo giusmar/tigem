@@ -13,8 +13,7 @@ create_cm <- function(x, ref) {
 
   read_count <- function(x) {
     utils::read.delim(
-      base::paste0(
-        here::here("$params.outdir", "countTable/"), x),
+      base::paste0("$params.outdir", "countTable/", x),
       comment.char = "#"
       ) |>
       dplyr::select(Geneid, matches("bam$")) |>
