@@ -1,11 +1,12 @@
 Package: tigem
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Handle file
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Rosa De Santis, Giuseppe Martone
+Maintainer: <g.martone@tigem.it>
+Description: Allow you to handle data as gtf or out files.
+    load_annotation function allows you to load annotation file
+    create_cm allows you to create a count matrix
+License: None
 Encoding: UTF-8
 LazyData: true
