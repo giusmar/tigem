@@ -8,7 +8,7 @@ You can install it on your machine firstly installing devtools and next using th
 #install.packages("devtools)
 devtools::install_github("giusmar/tigem")
 ```
-
+---
 ## Function
 
 Below you can find a little decription of alla function of tigem package.
