@@ -28,5 +28,5 @@ This function allows you to create a count matrix staring from the loaded gtf fi
 
 ---
 Credits:
-- [Rosa De Santis][https://github.com/RosaDeSa]
-- [Giuseppe Martone][https://github.com/giusmar]
+- [Rosa De Santis](https://github.com/RosaDeSa)
+- [Giuseppe Martone](https://github.com/giusmar)
