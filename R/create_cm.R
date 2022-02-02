@@ -2,18 +2,19 @@
 #'
 #' @param x (character vector) With x you have do define the character vector in which each element is the name of out file created by features count.
 #' @param ref (file) Ref is the file loaded with the function load_annotation of the same package.
+#' @param path (character) The path of folder in which are store all .out files.
 #'
 #' @return (data frame) It return a data frame that you can save as csv file.
 #' @export
 #'
 #' @examples create_cm(file_list)
-create_cm <- function(x, ref) {
+create_cm <- function(x, ref, path) {
 
   rmv <- function(x) gsub(".count.out", "", x)
 
   read_count <- function(x) {
     utils::read.delim(
-      base::paste0(filepath, '/', x),
+      base::paste0(path, '/', x),
       comment.char = "#"
       ) |>
       dplyr::select(Geneid, matches("bam$")) |>
